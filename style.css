@@ -1,15 +1,12 @@
-/* ボタンのスタイル */
-body{
-    width: 100%;
+.test *{
+    box-sizing: border-box;
 }
+
 .btn a {
-    position: relative;
-    display: block;
     background-color: #fff;
-    font-size: 14px;
-    width: 120px;
+    font-size: 16px;
     margin: auto;
-    padding: 1rem 4rem;
+    padding: 1.5rem calc(100% / 2 - 60px);
     font-weight: bold;
     color: black;
     text-decoration: none;
@@ -17,6 +14,11 @@ body{
     border: 2px solid black;
     border-radius: 100vh;
     transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    /* height: 56px; */
+    position: relative;
+    line-height: 1.75rem;
 }
 
 /* アイコンのスタイル */
@@ -43,12 +45,16 @@ body{
     list-style: none;
 }
 
-.store-list .item {
-    box-sizing: border-box;
-    width: 50%;
+.store-list li {
+    width: calc(100% / 2 - 60px);
+    position: relative;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
 }
 
-
+/* 
 a.btn_03 {
     display: block;
     text-align: center;
@@ -78,4 +84,4 @@ a.btn_03 a::after {
     border-left: 9px solid black;
     border-bottom: 6px solid transparent;
     box-sizing: border-box;
-}
+} */
